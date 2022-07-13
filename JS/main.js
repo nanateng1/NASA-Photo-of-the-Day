@@ -1,3 +1,7 @@
+window.onload = function () {
+  document.querySelector('.results').style.display = 'none';
+  document.querySelector('.back').style.display = 'none';
+};
 document.querySelector('.day-photo').addEventListener('click', getFetch);
 
 function getFetch() {
@@ -8,6 +12,8 @@ function getFetch() {
     .then(data => {
       console.log(data);
       document.querySelector('.results').style.position = 'absolute';
+      document.querySelector('.results').style.display = 'flex';
+      document.querySelector('.back').style.display = 'block';
       document.querySelector('.reveal').src = data.hdurl;
       document.querySelector('p').innerHTML = data.explanation;
     })
