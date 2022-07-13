@@ -7,9 +7,6 @@ function getFetch() {
     .then(res => res.json()) // parse response as JSON
     .then(data => {
       console.log(data);
-      document.querySelector('.results').style.position = 'absolute';
-      document.querySelector('.reveal').src = data.hdurl;
-      document.querySelector('p').innerHTML = data.explanation;
     })
     .catch(err => {
       console.log(`error ${err}`);

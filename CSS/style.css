@@ -4,8 +4,16 @@
 }
 
 html {
-  background-image: url(/CSS/images/spacedoodles-01-01-01.png);
   font-size: 62.5%;
+}
+
+.bg-image {
+  background-image: url(/CSS/images/spacedoodles-01.png);
+  height: 100%;
+  width: 100%;
+  filter: blur(4px);
+  position: absolute;
+  z-index: -1;
 }
 
 .container {
@@ -27,6 +35,12 @@ ul {
   font-size: 1.8rem;
 }
 
+li {
+  border: solid 2px red;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+
 .card {
   text-align: center;
   font-size: 10rem;
@@ -35,4 +49,32 @@ ul {
 
 button {
   font-size: 2rem;
+}
+
+.results {
+  background-color: rgba(255, 255, 255, 0.982);
+  position: ;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 95vh;
+}
+
+img {
+  max-width: 90%;
+  max-height: 90vh;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  padding: 1rem;
 }
