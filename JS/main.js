@@ -34,7 +34,14 @@ function getPrevious() {
       document.querySelector('.results').style.position = 'absolute';
       document.querySelector('.results').style.display = 'flex';
       document.querySelector('.back').style.display = 'block';
-      document.querySelector('.reveal').src = data.hdurl;
+
+      if (data.media_type === 'image') {
+        document.querySelector('img').src = data.hdurl;
+        document.querySelector('iframe').style.display = 'none';
+      } else if (data.media_type === 'video') {
+        document.querySelector('iframe').src = data.url;
+        document.querySelector('img').style.display = 'none';
+      }
       document.querySelector('p').innerHTML = data.explanation;
     })
     .catch(err => {
