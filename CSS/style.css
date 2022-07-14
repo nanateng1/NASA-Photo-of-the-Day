@@ -42,6 +42,12 @@ li {
   background-color: #00adb5;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 500;
+  box-shadow: 0 2px 7px 4px rgba(0, 0, 0, 0.519);
+  transition: 0.5s ease-in;
+}
+
+li:hover {
+  transform: translateY(2%);
 }
 
 .old-photos {
@@ -110,8 +116,16 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 100;
+  box-shadow: 2px 2px 7px 4px rgba(0, 0, 0, 0.519);
 }
 
+.card__arrow:hover {
+  background: #eeeeee;
+}
+
+svg:hover {
+  stroke: #00adb5;
+}
 .explanation {
   color: #eeeeee;
   padding: 2rem;
