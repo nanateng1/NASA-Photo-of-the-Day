@@ -12,51 +12,56 @@
   <body>
     <main>
       <div class="bg-image"></div>
-      <section class="container">
-        <nav class="navbar">
-          <ul>
-            <li class="old-photos">
-              <span>Photo from Previous Days</span>
+
+      <nav class="navbar container">
+        <ul>
+          <li class="old-photos">
+            <span>Photo from Previous Days</span>
+            <form action="">
               <input type="date" name="" id="" />
               <button class="get-old">Get Photo</button>
-            </li>
-            <li>Visit NASA</li>
-          </ul>
-        </nav>
+            </form>
+          </li>
+          <li class="nasa-link">Visit NASA</li>
+        </ul>
+      </nav>
 
-        <section class="card">
-          <h1>
-            Discover <br />
-            the <br />Cosmos
-          </h1>
-          <button class="day-photo">Photo Of The Day</button>
-        </section>
-        <section class="results">
+      <!-- hero section -->
+      <section class="card container">
+        <h1>
+          Discover <br />
+          the <br />Cosmos
+        </h1>
+        <button class="day-photo">Photo Of The Day</button>
+      </section>
+
+      <section class="results">
+        <div>
           <img class="reveal" src="" alt="" />
           <iframe src="" frameborder="0"></iframe>
-          <div class="card__arrow back">
-            <a href="index.html"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-arrow-back-up"
-                width="44"
-                height="44"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="#eeeeee"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1" /></svg
-            ></a>
-          </div>
-          <div class="explanation">
-            <h2>Photo Description</h2>
-            <p></p>
-          </div>
-        </section>
+        </div>
+        <div class="card__arrow back">
+          <a href="index.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-arrow-back-up"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="#eeeeee"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1" /></svg
+          ></a>
+        </div>
+        <div class="explanation">
+          <h2>Photo Description</h2>
+          <p></p>
+        </div>
       </section>
     </main>
     <script type="text/javascript" src="JS/main.js"></script>
