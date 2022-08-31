@@ -7,20 +7,28 @@ html {
   font-size: 62.5%;
 }
 
+/* main {
+  position: relative;
+  max-height: 100vh;
+  max-width: 80vw;
+} */
 .bg-image {
   background-image: url(/CSS/images/spacedoodles-01-01-01.png);
   min-height: 100%;
   min-width: 100%;
   filter: blur(1px);
   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 
-.container {
+/* .container {
   max-width: 80vw;
   max-height: 100vh;
   margin: auto;
-}
+} */
 
 .navbar {
   padding: 3rem;
@@ -100,12 +108,11 @@ button {
 .results {
   background-color: rgb(44, 44, 44);
   border-radius: 2rem;
-  position: ;
+  position: absolute;
   margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 200;
   display: flex;
   justify-content: center;
@@ -160,6 +167,7 @@ button {
     display: flex;
     flex-direction: column;
     height: fit-content;
+    top: 70%;
   }
 
   h1 {
@@ -170,7 +178,6 @@ button {
 .results:hover {
   border-color: #00adb5;
   box-shadow: 2px 2px 7px 4px rgba(0, 0, 0, 0.519);
-  transform: translateX(0.5%);
 }
 
 img,
